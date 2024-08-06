@@ -171,8 +171,7 @@ img {
 /* For large devices */
 @media screen and (max-width: 992px) {
   .container {
-    margin-left: var(--mb-1-875); /* Increased by 25% */
-    margin-right: var(--mb-1-875); /* Increased by 25% */
+    padding: 0 2rem; /* Added padding for responsiveness */
   }
 
   .button {
@@ -187,31 +186,78 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  body {
-    margin: 0 0 var(--header-height) 0;
-  }
-
   .section {
-    padding: 2.5rem 0 5rem; /* Increased by 25% */
+    padding: 2.5rem 0 5rem; /* Adjusted for medium screens */
   }
 
   .section__subtitle {
-    margin-bottom: var(--mb-3-75); /* Increased by 25% */
+    margin-bottom: var(--mb-2); /* Adjusted for medium screens */
+  }
+
+  .grid {
+    gap: 1.25rem; /* Adjusted for medium screens */
+  }
+
+  .button {
+    padding: 1rem 1.5rem; /* Adjusted for medium screens */
+  }
+
+  .container {
+    padding: 0 1.5rem; /* Added padding for responsiveness */
   }
 }
 
 @media screen and (max-width: 576px) {
-  /* Additional styles if needed */
-}
+  .section {
+    padding: 2rem 0 4rem; /* Adjusted for small screens */
+  }
 
-/* For small devices */
-@media screen and (max-width: 350px) {
-  :root {
-    --big-font-size: 2.8125rem; /* was 2.25rem */
+  .section__title {
+    font-size: var(--h2-font-size); /* Adjusted for small screens */
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-1-5); /* Adjusted for small screens */
   }
 
   .container {
-    margin-left: var(--mb-1-25); /* Increased by 25% */
-    margin-right: var(--mb-1-25); /* Increased by 25% */
+    padding: 0 1rem; /* Added padding for small screens */
+  }
+
+  .button {
+    padding: 0.875rem 1.25rem; /* Adjusted for small screens */
+  }
+
+  .grid {
+    gap: 1rem; /* Adjusted for small screens */
+  }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.8125rem; /* was 2.25rem */
+    --h1-font-size: 1.5rem; /* was 1.25rem */
+    --h2-font-size: 1.25rem; /* was 1rem */
+    --h3-font-size: 1rem; /* was 0.875rem */
+    --normal-font-size: 1rem; /* was 0.875rem */
+    --small-font-size: 0.875rem; /* was 0.75rem */
+    --smaller-font-size: 0.8125rem; /* was 0.75rem */
+  }
+
+  .container {
+    padding: 0 0.5rem; /* Added padding for extra small screens */
+  }
+
+  .section {
+    padding: 1.5rem 0 3rem; /* Adjusted for extra small screens */
+  }
+
+  .button {
+    padding: 0.75rem 1rem; /* Adjusted for extra small screens */
+  }
+
+  .grid {
+    gap: 0.75rem; /* Adjusted for extra small screens */
   }
 }
